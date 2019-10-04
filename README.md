@@ -59,3 +59,4 @@ Git Commands
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+| 'git reset [file]' | unstages the file, but it preserves the file contents |
