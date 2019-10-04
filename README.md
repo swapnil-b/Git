@@ -6,6 +6,8 @@ Git Commands
 
 | Command | Description |
 | ------- | ----------- |
+| `git config –-global user.name “[name]”` | sets the author name |
+| `git config –-global user.email “[email address]”` | sets the email address to be used with your commits |
 | `git init` | Initialize a local Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
