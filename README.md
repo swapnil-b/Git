@@ -37,7 +37,11 @@ Git Commands
 | `git merge [branch name]` | Merge a branch into the active branch |
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
 | `git stash` | Stash changes in a dirty working directory |
+| `git stash pop` | restores the most recently stashed files |
 | `git stash clear` | Remove all stashed entries |
+| `git stash list` | lists all stashed changesets |
+| `git stash drop` | discards the most recently stashed changeset |
+
 
 ### Sharing & Updating Projects
 
@@ -59,4 +63,7 @@ Git Commands
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
-| 'git reset [file]' | unstages the file, but it preserves the file contents |
+| `git reset [file]` | unstages the file, but it preserves the file contents |
+| `git reset [commit]` | undoes all the commits after the specified commit and preserves the changes locally |
+| `git reset –hard [commit]` | discards all history and goes back to the specified commit |
+| `git show [commit]` | shows the metadata and content changes of the specified commit |
