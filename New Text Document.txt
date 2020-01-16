@@ -1,0 +1,10 @@
+
+
+#!/bin/bash
+DIR=/path/to/dir
+SIZE=10000
+MAILADDR="mail@domain.com"
+if [ $(du -s $DIR | awk '{print $1}') -gt $SIZE ]; then
+    echo "$DIR" | mail -s "Directory limit exceeded in $DIR" $MAILADDR
+fi
+
