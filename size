@@ -1,0 +1,3 @@
+#!/bin/bash
+(du -hs * | sort -rh | head -5) >>/tmp/usb.log
+echo "your message here" | mail -s "title" -a /tmp/usb.log swapnil-b@moving-picture.com

@@ -1,0 +1,7 @@
+#!/bin/bash
+DIR=/root/Desktop
+SIZE=10
+MAILADDR="bhoiteswapnil.04@gmail.com"
+if [ $(du -s $DIR | awk '{print $1}') -gt $SIZE ]; then
+    echo "$DIR" | mail -s "Directory limit exceeded in $DIR" $MAILADDR
+fi
