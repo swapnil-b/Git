@@ -1,10 +1,9 @@
 #!/bin/bash
-#Script Name    :alertmemory.sh
-#Description    :send alert mail when server memory is running low
-#Args           :       
-#Author         :Aaron Kili Kisinga
-#Email          :aaronkilik@gmail.com
-#License       : GNU GPL-3      
+#######################################################################################
+#Script Name    :Home Directoy Size Full
+#Description    :send alert mail when home directory size exceed limit
+#Author         :Swapnil Bhoite
+#Email          :swapnil-b@moving-picture.com
 #######################################################################################
 ## declare mail variables
 ##email subject 
