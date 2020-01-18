@@ -1,3 +1,21 @@
 #!/bin/bash
+#Script Name    :alertmemory.sh
+#Description    :send alert mail when server memory is running low
+#Args           :       
+#Author         :Aaron Kili Kisinga
+#Email          :aaronkilik@gmail.com
+#License       : GNU GPL-3      
+#######################################################################################
+## declare mail variables
+##email subject 
+subject="Home Directory Size Full"
+##sending mail as
+from="apollo server"
+## sending mail to
+to="swapnil-b@moving-picture.com"
+## send carbon copy to
+also_to="sumit-n@moving-picture.com"
+
 (du -hs * | sort -rh | head -5) >>/tmp/usb.log
-echo "your message here" | mail -s "title" -a /tmp/usb.log swapnil-b@moving-picture.com
+#echo "your message here" | mail -s "title" -a /tmp/usb.log swapnil-b@moving-picture.com
+echo -e "Home directory size Full users list" | mailx -a /tmp/usb.log -s "$subject" -r "$from" -c "$to" "$also_to"
