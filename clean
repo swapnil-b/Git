@@ -1,0 +1,3 @@
+#!/bin/bash
+(du -hs /usr/people/* | sort -rh | head -9) >>/tmp/home.log
+echo "Directory limit exceeded in Home" | mail -s "Home Directory space" -a /tmp/home.log sumit-n@moving-picture.com
